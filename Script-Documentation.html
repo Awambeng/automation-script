@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary Documentation: </title>
+    <style>
+        *{
+            margin: 2%;
+            padding: auto;
+            background: rgb(184, 182, 182);
+            /* font-size: 20px; */
+            justify-content: flex-end;
+        }
+        .foot{
+            font-weight: 700;
+            color: red;
+            text-align: center;
+        }
+
+        .container h1{
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .intro{
+            padding-bottom: 10px;
+            line-height: 2;
+            font-size: 18px;
+        }
+
+        .content .first_content p{
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        .content .second_content p{
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        .content .third_content p{
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        .content .first_content span{
+            font-size: 19px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 700;
+        }
+
+        .content .second_content span{
+            font-size: 19px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 700;
+        }
+
+        .content .third_content span{
+            font-size: 19px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 700;
+        }
+
+        .team{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            /* margin: auto; */
+        }
+
+        .photo{
+            
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .photo img{
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+        }
+
+        .photo h3{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> SUMMARY DOCUMENTATION: </h1>
+        <h2>Dear Users,</h2>
+        <p class="intro">Welcome to our software documentation, which aims to provide valuable information and guidance to enhance your experience with our automation script. Our script 
+
+            is specifically designed to streamline and automate a wide range of tasks based on user input. By presenting a user-friendly menu with multiple options, it allows 
+            
+            you to effortlessly select and execute specific operations. The script provides a user-friendly interface by greeting the user and presenting the menu options. 
+            
+            It incorporates progress indicators during operations to give feedback on the ongoing tasks. The script also includes an option to exit the program. To use the script, 
+            
+            the user selects a menu option by entering the corresponding number. The script then executes the tasks associated with the chosen menu. For example, selecting Menu 1 
+            
+            initiates system inspection and generates a report, while Menu 2 allows file operations like searching for files and counting lines. Overall, the script aims to automate 
+            
+            various system-related tasks, file operations, and data fetching, providing convenience and efficiency to the user. Let's delve into the functionality offered by each menu:</p>
+    </div>
+    <ul>
+        <li>System Inspection and Report:</li>
+        <li>File Operations:</li>
+        <li>Data Fetching:</li>
+    </ul>
+    <div class="content">
+        <div class="first_content">
+            <h2>****************************************************  System Inspection and Report: ********************************************</h2>
+            <p>This menu focuses on performing a thorough inspection of your system and generating a comprehensive report to provide you with valuable insights. Here are the functionalities 
+                
+                provided within this menu: (This menu is represented by the number 1).</p>
+
+                <span>**********************************  Inspects the user's system by listing all running processes and saves the result in a file named `process.txt`.  **********************************</span>
+                <p>This option allows you to view all the currently running processes on your system. The script utilizes the 'ps' command to retrieve the process information and saves the output 
+                    
+                    in a file named process.txt. By examining the running processes, you can gain visibility into the active components of your system.
+                </p>
+
+                <span>
+                    ************************  Checks disk usage and identifies directories consuming the most space. The output is saved in a file named `disk-usage.txt`.  ***********************
+                </span>
+                <p>
+                    With this feature, you can analyze the disk usage on your system. The script employs the 'du' command to identify directories that consume the most space. The output is organized 
+                    
+                    and stored in a file named disk-usage.txt. This information helps you identify areas where disk space is being utilized and optimize storage usage accordingly.
+                </p>
+
+                <span>
+                    ***************************************  Checks active network connections and saves the output in a file named `network.txt`.  **********************************************
+                </span>
+                <p>
+                    This option enables you to monitor the active network connections on your system. By using the 'netstat' command, the script retrieves information about active network connections and 
+                    
+                    saves it in a file named network.txt. This allows you to understand the network activity on your system and identify any suspicious or unwanted connections.
+                </p>
+
+                <span>
+                    ******************************************  Performs a backup of a specified directory to a chosen location.  ********************************************
+                </span>
+                <p>
+                    In addition to system inspection, this menu offers a backup functionality. You can specify a directory that you want to back up, and the script will create a copy of the directory in a 
+                    
+                    chosen location. This feature ensures that your important data is securely backed up, providing an extra layer of protection against data loss.
+                </p>
+
+                <span>**********************************  Generates a brief report summarizing the findings and displays it on the terminal.  **********************************</span>
+                <p>
+                    Once the above tasks are completed, the script generates a summary report summarizing the findings from the system inspection. The report is presented on the terminal, providing you with a 
+                    
+                    concise overview of the running processes, disk usage, network connections, and the success of the backup operation. This summary report allows you to quickly review the important information  
+                    
+                    without having to go through individual files.
+                </p>
+        </div>
+
+        <div class="second_content">
+                <h2>
+                    <h2>******************************************************* File Operations: **********************************************</h2>
+                </h2>
+                <p>
+                    This menu focuses on providing efficient file management capabilities. It offers a range of functionalities to help you organize and manipulate files on your system. Here is a brief 
+                    
+                    explanation of the file operations provided within this menu:
+                </p>
+
+                <span>
+                    ********************************************  Allows the user to search for files by extension within a specified directory.  *************************************************
+                </span>
+                <p>
+                    This feature allows you to search for files based on their file extensions within a specified directory. You can enter the desired extension, and the script will scan the directory to 
+                    
+                    find all files with that extension. This functionality is particularly useful when you need to locate specific types of files quickly.
+                </p>
+
+                <span>
+                    ******************************************************  Counts the number of lines in a specified file.  ***************************************************************
+                </span>
+                <p>
+                    With this option, you can count the number of lines in a specified file. This can be helpful when you need to determine the size or complexity of a file. The script reads the file and 
+                    
+                    provides you with the total count of lines, giving you valuable information about the file's contents.
+                </p>
+
+                <span>
+                    ******************************************************  Performs a backup of a specified directory to a chosen location.  ******************************************************
+                </span>
+                <p>
+                    Similar to the backup functionality in the system inspection menu, this option allows you to create a backup of a specified directory. You can choose the directory you want to back up, 
+                    
+                    and the script will create a copy of it in a designated location. This feature helps you protect your important files and ensures that you have a backup in case of any data loss.
+                </p>
+        </div>
+        <div class="third_content">
+            <h2>****************************************************** Data Fetching: ***********************************************</h2>
+            <p>
+                The Data Fetching menu focuses on retrieving real-time data, specifically catering to fetching weather information for a specified city. This menu allows you to stay updated on the current  
+                
+                weather conditions and temperature. 
+            </p>
+            <span>
+                *****************************  Fetches real-time weather data for a specified city using tools like curl and a free weather API (e.g., OpenWeather).  ****************************
+            </span>
+            <p>
+                This option utilizes tools like curl and integrates with popular weather APIs, such as OpenWeather, to fetch real-time weather data for a specified city. By entering the name of the city,  
+                
+                the script retrieves the latest weather information, including temperature and weather conditions.
+            </p>
+
+            <span>
+                ******************************************************  Displays the current weather and temperature to the user.  ******************************************************
+            </span>
+            <p>
+                Once the weather data is fetched, this option presents the current weather conditions and temperature on the terminal. 
+            </p>
+        </div>
+        <h1>OUR TEAM</h1>
+        <div class="team">
+            
+            <span class="photo">
+                <img src="awambeng.jpg" alt="my-photo">
+                <h3>Dr. Awambeng Rodrick <br><br> Full stack Developer & Devops Eng.</h3>
+            </span>
+            <span class="photo">
+                <img src="bryan.jpg" alt="my-photo">
+                <h3>Bryan Ngongeh <br><br> Full Stack Developer</h3>
+            </span>
+            <span class="photo">
+                <img src="ariel.jpg" alt="my-photo">
+                <h3>Tchikaya Ariel <br><br> Software Eng.</h3>
+            </span>
+            <span class="photo">
+                <img src="ella.jpg" alt="my-photo">
+                <h3>Tekum Emmanuella <br><br> Full Stack Developer </h3>
+            </span>
+            <span class="photo">
+                <img src="ogen.jpg" alt="my-photo">
+                <h3>Ogen Bertrand <br><br> Full Stack Developer</h3>
+            </span>
+            <span class="photo">
+                <img src="arthur.jpg" alt="my-photo">
+                <h3>Arthur <br><br> Full Stack Developer</h3>
+            </span>
+        </div>
+        <center class="foot">
+            copy@right 2023
+        </center>
+    </div>
+</body>
+</html>	                                                                
